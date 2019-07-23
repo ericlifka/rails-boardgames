@@ -19,7 +19,8 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(game_params)
+    @user = current_user
+    @game = @user.games.create(game_params)
 
     if @game.save
       redirect_to @game
