@@ -1,8 +1,15 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'common';
+
 .activity-feed {
   font-size: 20px;
+
+  .feed-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 .nav-links {
@@ -15,8 +22,7 @@
     text-decoration: none;
     padding: 15px;
     font-style: normal;
-    color: #333;
-    border-right: 1px solid #ccc;
-    border-top: 1px solid #ccc;
+    color: inherit;
+    border: 1px solid $white;
   }
 }

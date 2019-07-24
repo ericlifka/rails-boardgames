@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import 'common';
+
 html,
 body {
   padding: 0;
@@ -23,7 +25,8 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: $white;
+  color: $primary-black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -31,11 +34,14 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .footer {
   flex-grow: 0;
   display: flex;
   flex-direction: row;
-  background-color: #eee;
+  color: $white;
+  background-color: $primary-medium;
+  border-top: 1px solid $white;
 }
