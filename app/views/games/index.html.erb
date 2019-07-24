@@ -2,13 +2,21 @@
 
 <table>
   <tr>
+    <th>Image</th>
     <th>Name</th>
     <th>Description</th>
     <th colspan="3"></th>
   </tr>
 
   <% @games.each do |game| %>
-    <tr>
+   <tr>
+      <td>
+          <% if game.image %>
+              <%= link_to game_path(game) do %>
+                  <%= image_tag game.image %>
+              <% end %>
+          <% end %>
+      </td>
       <td><%= game.name %></td>
       <td><%= game.description %></td>
       <td><%= link_to 'Show', game_path(game) %></td>
