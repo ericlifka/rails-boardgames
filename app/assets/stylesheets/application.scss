@@ -24,4 +24,18 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #eee;
 }

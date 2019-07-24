@@ -1,2 +1,25 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'My Games', controller: 'games' %>
+<div class="content activity-feed">
+  <div class="row feed-item">
+    Keri and Joe played <span class="game-link">Settlers of Catan</span> on Tuesday.
+  </div>
+
+  <div class="row feed-item">
+    Arin added <span class="game-link">5</span> games to his collection.
+  </div>
+
+  <div class="row feed-item">
+    You and Keri became friends.
+  </div>
+</div>
+
+<div class="footer nav-links">
+  <a href="">
+    <i class="icon">S</i>
+  </a>
+  <a href="">
+    <i class="icon">R</i>
+  </a>
+  <%= link_to(controller: 'games') do %>
+    <i class="icon">G</i>
+  <% end %>
+</div>
